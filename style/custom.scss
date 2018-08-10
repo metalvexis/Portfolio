@@ -1,0 +1,35 @@
+@import "./bootstrap/bootstrap.css";
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+$light-fog-primary: #787e74;
+$light-fog-secondary: #c0cdd3;
+$light-fog-tertiary: #fff2c5;
+
+body {
+	background-color: $light-fog-tertiary;
+}
+
+.sidebar-left {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 100;
+	
+	background-color: $light-fog-primary;
+}
+
+.main-content {
+	font-family: Montserrat;
+	background-color: $light-fog-secondary;
+
+	.content-body {
+		margin: 10px;
+		
+		p {
+			margin-bottom: 150px;
+		}
+	}
+}
+
+
