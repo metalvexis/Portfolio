@@ -1,27 +1,54 @@
-@import "./bootstrap/bootstrap.css";
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import "./bootstrap/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css?family=Oxygen|Quicksand");
 body {
-  background-color: #fff2c5;
+  background-color: #28282A;
+}
+
+.darkspace {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1300px;
+  background-color: #28282A;
+  color: #E7E8EA;
+  font-family: Oxygen;
 }
 
 .sidebar-left {
   position: fixed;
   top: 0;
   bottom: 0;
-  left: 0;
   z-index: 100;
-  background-color: #787e74;
+  padding-top: 50px;
+  /* Style Checker */
+}
+@media (max-width: 1199.98px) {
+  .sidebar-left {
+    left: 0;
+  }
+}
+@media (min-width: 1199.98px) {
+  .sidebar-left {
+    min-width: 300px;
+  }
 }
 
 .main-content {
-  font-family: Montserrat;
-  background-color: #c0cdd3;
+  /*@media (max-width: 1199.98px){
+  	margin-left: 200px;
+  }*/
+  /* Style Checker */
 }
-.main-content .content-body {
-  margin: 10px;
+@media (min-width: 1199.98px) {
+  .main-content {
+    margin-left: 300px;
+    max-width: 1000px;
+  }
 }
-.main-content .content-body p {
-  margin-bottom: 150px;
+.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
+  font-family: Quicksand;
+}
+.main-content .main-body p {
+  margin-bottom: 200px;
 }
 
 /*# sourceMappingURL=compiled.css.map */
