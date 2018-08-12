@@ -11,6 +11,7 @@
 	<link href="style/compiled.css" rel="stylesheet" type="text/css" />
 	<script src="lib/jquery/jquery-3.3.1.min.js"></script>
 	<script src="lib/bootstrap/bootstrap.bundle.min.js">	</script>
+	<script src="lib/custom.js">	</script>
 
 </head>
 
@@ -19,48 +20,58 @@
 
 		<div class="row d-none d-sm-block">
 			<!-- Greater than or equal Medium Screens only-->
-			<div class="sidebar-left col-md-2">
+			<div class="sidebar-left col-sm-3">
 				<div class="sidebar-body col-12">
-					
-					<ul class="sidebar-links">
-						<li>
-							<a href="#first">Expertise</a>
-						</li>
-						<li>
-							<a>Experience</a>
-						</li>
-
-						<li>
-							<a href="#last">Contact</a>
-						</li>
-					</ul>
+					<b id="progress"></b>
+					<div class="sidebar-links">
+						<div class="sidebar-timeline"></div>
+						<div class="sidebar-link-item">
+							<a id="link-expertise" href="#first">Expertise</a>
+						</div>
+						<div class="sidebar-link-item"><a>????</a></div>
+						<div class="sidebar-link-item"><a>????</a></div>
+						<div class="sidebar-link-item"><a>????</a></div>
+						<div class="sidebar-link-item"><a>????</a></div>
+						<div class="sidebar-link-item"><a>????</a></div>
+						<div class="sidebar-link-item">
+							<a id="link-experience" href="#second">Experience</a>
+						</div>
+						<div class="sidebar-link-item">
+							<a id="link-contact" href="#last">Contact</a>
+						</div>
+					</div>
 
 				</div>
 			</div>
-			<div class="main-content offset-md-2 col-md-10">
-				<div class="main-body col-12">
+			<div class="main-content col-sm-9 offset-sm-3 ">
+				<div class="main-body">
 					<h2>James Paulo Saballegue</h2>
 					<p id="first">
+						<h3>First</h3>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mattis, odio sit amet maximus pulvinar, libero arcu tincidunt mi, facilisis malesuada velit arcu vel diam. Suspendisse orci urna, interdum a purus ac, auctor ultricies lacus. Donec bibendum nisl
 						ac sem cursus tincidunt. Nullam libero est, imperdiet sed mattis sit amet, pharetra eu ipsum.
 					</p>
 
 					<p>
+						<h3>???</h3>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mattis, odio sit amet maximus pulvinar, libero arcu tincidunt mi, facilisis malesuada velit arcu vel diam. Suspendisse orci urna, interdum a purus ac, auctor ultricies lacus. Donec bibendum nisl
+						ac sem cursus tincidunt. Nullam libero est, imperdiet sed mattis sit amet, pharetra eu ipsum.
+					</p>
+
+					<p id='second'>
+						<h3>Second</h3>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mattis, odio sit amet maximus pulvinar, libero arcu tincidunt mi, facilisis malesuada velit arcu vel diam. Suspendisse orci urna, interdum a purus ac, auctor ultricies lacus. Donec bibendum nisl
 						ac sem cursus tincidunt. Nullam libero est, imperdiet sed mattis sit amet, pharetra eu ipsum.
 					</p>
 
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mattis, odio sit amet maximus pulvinar, libero arcu tincidunt mi, facilisis malesuada velit arcu vel diam. Suspendisse orci urna, interdum a purus ac, auctor ultricies lacus. Donec bibendum nisl
-						ac sem cursus tincidunt. Nullam libero est, imperdiet sed mattis sit amet, pharetra eu ipsum.
-					</p>
-
-					<p>
+						<h3>???</h3>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mattis, odio sit amet maximus pulvinar, libero arcu tincidunt mi, facilisis malesuada velit arcu vel diam. Suspendisse orci urna, interdum a purus ac, auctor ultricies lacus. Donec bibendum nisl
 						ac sem cursus tincidunt. Nullam libero est, imperdiet sed mattis sit amet, pharetra eu ipsum.
 					</p>
 
 					<p id='last'>
+						<h3>Last</h3>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mattis, odio sit amet maximus pulvinar, libero arcu tincidunt mi, facilisis malesuada velit arcu vel diam. Suspendisse orci urna, interdum a purus ac, auctor ultricies lacus. Donec bibendum nisl
 						ac sem cursus tincidunt. Nullam libero est, imperdiet sed mattis sit amet, pharetra eu ipsum.
 					</p>
