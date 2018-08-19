@@ -68,7 +68,8 @@ body {
   font-family: Quicksand;
 }
 .main-content .main-body {
-  padding: 100px 0px;
+  padding-top: 100px;
+  padding-bottom: 300px;
 }
 .main-content .main-body .main-section {
   min-height: 500px;
@@ -78,6 +79,13 @@ body {
 .active-link {
   color: #C44C27 !important;
   font-size: 25px !important;
+}
+
+a {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 /*# sourceMappingURL=compiled.css.map */
