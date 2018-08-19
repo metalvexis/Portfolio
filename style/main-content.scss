@@ -1,0 +1,33 @@
+@import "./theme-darkspace";
+.main-content {
+	padding-left: 20px;
+
+	h1,h2,h3,h4,h5,h6 {
+		font-family: $font-primary;
+	}
+
+	.main-body {
+		padding-top: 100px; 
+		padding-bottom: 100px;
+		.main-section{
+			min-height: 500px;
+			h3 {
+				color: $space-contrast-3;
+			}
+		}
+	}
+	/* Style Checker */
+	//border: 1px solid yellow;
+}
+
+.active-link {
+	color: $space-contrast-2 !important;
+	font-size: 25px !important;
+}
+
+.even-content { 
+	color: $light-fog-2;
+	background-color: $light-fog-1;
+	min-height: 300px !important;
+	max-height: 300px !important;
+}

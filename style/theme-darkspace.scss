@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen|Quicksand');
+$font-primary: Quicksand;
+$font-secondary: Oxygen;
+$space-bg : #28282A;
+$space-fg: #E7E8EA;
+$space-contrast-1: #58ada1;
+$space-contrast-2: #F6E782;
+$space-contrast-3: #C44C27;
+$light-fog-1: #787e74;
+$light-fog-2: #c0cdd3;
+$light-fog-3: #fff2c5;
+
+body {
+	background-color: $space-bg;
+}
+
+.darkspace {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: $space-bg;
+	color: $space-fg;
+	font-family: $font-secondary;
+}

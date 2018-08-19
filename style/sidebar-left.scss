@@ -1,0 +1,54 @@
+@import "./theme-darkspace";
+.sidebar-left {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	z-index: 100;
+	padding: 25px 5px;
+	@media #{$lg} {
+		//min-width: 200px;
+		left: 1px;
+	}
+	@media #{$xl} {
+		//min-width: 300px;
+		left: 1px;
+	}
+	.sidebar-body {
+		padding: 0;
+		padding-top: 100px;
+		.sidebar-links {
+			border-radius: 4px;
+			max-width: 220px;
+			overflow-y: hidden;
+			@media #{$xl} {
+				margin: 0 auto;
+			}
+			.sidebar-link-item {
+				margin-bottom: 50px;
+				padding-left: 20px;
+				a {
+					font-size: 18px;
+					color: $space-contrast-1;
+
+					-webkit-transition: all 0.2s ease;
+					-moz-transition: all 0.2s ease;
+					-o-transition: all 0.2s ease;
+					transition: all 0.2s ease;
+					
+					&:hover {
+						text-decoration: none !important;
+						color: $space-contrast-2 !important;
+						font-size: 25px !important;
+					}
+				}
+			}
+			.sidebar-timeline {
+				position: fixed;
+				width: 1px;
+				height: 90%;
+			}
+		}
+	}
+	/* Style Checker */
+	//border: 1px solid $space-contrast-3;
+}
