@@ -10,8 +10,10 @@ $light-fog-1: #787e74;
 $light-fog-2: #c0cdd3;
 $light-fog-3: #fff2c5;
 
-body {
+html, body {
 	background-color: $space-bg;
+	height: 100%;
+	margin: 0;
 }
 
 .darkspace {
@@ -20,4 +22,24 @@ body {
 	background-color: $space-bg;
 	color: $space-fg;
 	font-family: $font-secondary;
+
+}
+
+.parallax-nightsky { 
+	/* The image used */
+	background-image: url("../res/nightsky.jpg");
+
+	/* Set a specific height */
+	height: 500px; 
+	width: 100%;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.wrapper-fill-screen {
+	min-height: 100%;
 }

@@ -1,16 +1,16 @@
 @import "./theme-darkspace";
 .main-content {
-	padding-left: 20px;
-
+	padding: 0;
 	h1,h2,h3,h4,h5,h6 {
 		font-family: $font-primary;
 	}
 
 	.main-body {
-		padding-top: 100px; 
-		padding-bottom: 100px;
+		/*padding-top: 50px; 
+		padding-bottom: 100px;*/
 		.main-section{
-			min-height: 500px;
+			padding: 4% 2%;
+
 			h3 {
 				color: $space-contrast-3;
 			}

@@ -5,6 +5,8 @@
 	bottom: 0;
 	z-index: 100;
 	padding: 25px 5px;
+	padding-top: 50px;
+	overflow: auto;
 	@media #{$lg} {
 		//min-width: 200px;
 		left: 1px;
@@ -15,7 +17,7 @@
 	}
 	.sidebar-body {
 		padding: 0;
-		padding-top: 100px;
+		
 		.sidebar-links {
 			border-radius: 4px;
 			max-width: 220px;

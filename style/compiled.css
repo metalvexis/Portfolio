@@ -2,8 +2,10 @@
 @import url("https://fonts.googleapis.com/css?family=Oxygen|Quicksand");
 @import url("https://fonts.googleapis.com/css?family=Oxygen|Quicksand");
 @import url("https://fonts.googleapis.com/css?family=Oxygen|Quicksand");
-body {
+html, body {
   background-color: #28282A;
+  height: 100%;
+  margin: 0;
 }
 
 .darkspace {
@@ -14,19 +16,36 @@ body {
   font-family: Oxygen;
 }
 
+.parallax-nightsky {
+  /* The image used */
+  background-image: url("../res/nightsky.jpg");
+  /* Set a specific height */
+  height: 500px;
+  width: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper-fill-screen {
+  min-height: 100%;
+}
+
 .main-content {
-  padding-left: 20px;
+  padding: 0;
   /* Style Checker */
 }
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
   font-family: Quicksand;
 }
 .main-content .main-body {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  /*padding-top: 50px; 
+  padding-bottom: 100px;*/
 }
 .main-content .main-body .main-section {
-  min-height: 500px;
+  padding: 4% 2%;
 }
 .main-content .main-body .main-section h3 {
   color: #C44C27;
@@ -44,8 +63,10 @@ body {
   max-height: 300px !important;
 }
 
-body {
+html, body {
   background-color: #28282A;
+  height: 100%;
+  margin: 0;
 }
 
 .darkspace {
@@ -56,12 +77,31 @@ body {
   font-family: Oxygen;
 }
 
+.parallax-nightsky {
+  /* The image used */
+  background-image: url("../res/nightsky.jpg");
+  /* Set a specific height */
+  height: 500px;
+  width: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper-fill-screen {
+  min-height: 100%;
+}
+
 .sidebar-left {
   position: fixed;
   top: 0;
   bottom: 0;
   z-index: 100;
   padding: 25px 5px;
+  padding-top: 50px;
+  overflow: auto;
   /* Style Checker */
 }
 @media (max-width: 1199.98px) {
@@ -76,7 +116,6 @@ body {
 }
 .sidebar-left .sidebar-body {
   padding: 0;
-  padding-top: 100px;
 }
 .sidebar-left .sidebar-body .sidebar-links {
   border-radius: 4px;
@@ -111,8 +150,10 @@ body {
   height: 90%;
 }
 
-body {
+html, body {
   background-color: #28282A;
+  height: 100%;
+  margin: 0;
 }
 
 .darkspace {
@@ -121,6 +162,23 @@ body {
   background-color: #28282A;
   color: #E7E8EA;
   font-family: Oxygen;
+}
+
+.parallax-nightsky {
+  /* The image used */
+  background-image: url("../res/nightsky.jpg");
+  /* Set a specific height */
+  height: 500px;
+  width: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper-fill-screen {
+  min-height: 100%;
 }
 
 /*# sourceMappingURL=compiled.css.map */
