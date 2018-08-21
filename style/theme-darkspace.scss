@@ -11,7 +11,6 @@ $light-fog-2: #c0cdd3;
 $light-fog-3: #fff2c5;
 
 html, body {
-	background-color: $space-bg;
 	height: 100%;
 	margin: 0;
 }
@@ -25,12 +24,12 @@ html, body {
 
 }
 
-.parallax-nightsky { 
+.parallax-nebula { 
 	/* The image used */
-	background-image: url("../res/nightsky.jpg");
+	background-image: url("../res/nebula.png");
 
 	/* Set a specific height */
-	height: 500px; 
+	height: 100%; 
 	width: 100%;
 
 	/* Create the parallax scrolling effect */
@@ -38,6 +37,59 @@ html, body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+
+	color: $light-fog-2;
+}
+
+.parallax-moon { 
+	/* The image used */
+	background-image: url("../res/moon.png");
+
+	/* Set a specific height */
+	height: 100%; 
+	width: 100%;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	color: $light-fog-2;
+}
+
+.parallax-nightsky { 
+	/* The image used */
+	background-image: url("../res/nightsky.png");
+
+	/* Set a specific height */
+	height: 100%; 
+	width: 100%;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	color: $light-fog-2;
+}
+
+.parallax-dawn { 
+	/* The image used */
+	background-image: url("../res/dawn.png");
+
+	/* Set a specific height */
+	height: 100%; 
+	width: 100%;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	color: $light-fog-2;
 }
 
 .wrapper-fill-screen {
