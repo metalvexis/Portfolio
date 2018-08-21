@@ -1,5 +1,6 @@
 @import "./theme-darkspace";
 .main-content {
+	background-color: $space-bg;
 	padding: 0;
 	h1,h2,h3,h4,h5,h6 {
 		font-family: $font-primary;
@@ -10,13 +11,15 @@
 		/*padding-top: 50px; 
 		padding-bottom: 100px;*/
 		.main-section{
+			background-color: $space-bg;
+			padding: 4% 2%;
+			font-size: 18px;
+			text-shadow: 0px 0px 6px #000;
 
 			@media #{$xs} {
 				padding: 10% 4%;	
 			}
-			padding: 4% 2%;
-			font-size: 18px;
-			text-shadow: 0px 0px 6px #000;
+			
 			h3 {
 				color: $space-contrast-3;
 			}
