@@ -15,66 +15,6 @@ html, body {
   font-family: Oxygen;
 }
 
-.parallax-nebula {
-  /* The image used */
-  background-image: url("../res/nebula.png");
-  /* Set a specific height */
-  height: 100%;
-  width: 100%;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #c0cdd3;
-}
-
-.parallax-moon {
-  /* The image used */
-  background-image: url("../res/moon.png");
-  /* Set a specific height */
-  height: 100%;
-  width: 100%;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #c0cdd3;
-}
-
-.parallax-nightsky {
-  /* The image used */
-  background-image: url("../res/nightsky.png");
-  /* Set a specific height */
-  height: 100%;
-  width: 100%;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #c0cdd3;
-}
-
-.parallax-dawn {
-  /* The image used */
-  background-image: url("../res/dawn.png");
-  /* Set a specific height */
-  height: 100%;
-  width: 100%;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #c0cdd3;
-}
-
-.wrapper-fill-screen {
-  min-height: 100%;
-}
-
 .main-content {
   background-color: #28282A;
   padding: 0;
@@ -83,10 +23,6 @@ html, body {
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
   font-family: Quicksand;
   font-weight: 600;
-}
-.main-content .main-body {
-  /*padding-top: 50px; 
-  padding-bottom: 100px;*/
 }
 .main-content .main-body .main-section {
   background-color: #28282A;
@@ -101,6 +37,114 @@ html, body {
 }
 .main-content .main-body .main-section h3 {
   color: #C44C27;
+}
+@media (max-width: 2565px) {
+  .main-content .main-body div#first {
+    /* The image used */
+    background-image: url("../res/nebula.png");
+    color: #c0cdd3;
+    /* Set a specific height */
+    height: 100%;
+    width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main-content .main-body div#second {
+    /* The image used */
+    background-image: url("../res/moon.png");
+    color: #c0cdd3;
+    /* Set a specific height */
+    height: 100%;
+    width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main-content .main-body div#third {
+    /* The image used */
+    background-image: url("../res/nightsky.png");
+    color: #c0cdd3;
+    /* Set a specific height */
+    height: 100%;
+    width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main-content .main-body div#last {
+    /* The image used */
+    background-image: url("../res/dawn.png");
+    color: #c0cdd3;
+    /* Set a specific height */
+    height: 100%;
+    width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (max-width: 575.98px) {
+  .main-content .main-body div#first {
+    /* The image used */
+    background-image: url("../res/nebula.png");
+    color: #c0cdd3;
+    /* Set a specific height */
+    height: 100%;
+    width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main-content .main-body div#second {
+    /* The image used */
+    background-image: url("../res/nebula.png");
+    color: #c0cdd3;
+    /* Set a specific height */
+    height: 100%;
+    width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main-content .main-body div#third {
+    /* The image used */
+    background-image: url("../res/nebula.png");
+    color: #c0cdd3;
+    /* Set a specific height */
+    height: 100%;
+    width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main-content .main-body div#last {
+    /* The image used */
+    background-image: url("../res/nebula.png");
+    color: #c0cdd3;
+    /* Set a specific height */
+    height: 100%;
+    width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .active-link {
@@ -128,66 +172,6 @@ html, body {
   font-family: Oxygen;
 }
 
-.parallax-nebula {
-  /* The image used */
-  background-image: url("../res/nebula.png");
-  /* Set a specific height */
-  height: 100%;
-  width: 100%;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #c0cdd3;
-}
-
-.parallax-moon {
-  /* The image used */
-  background-image: url("../res/moon.png");
-  /* Set a specific height */
-  height: 100%;
-  width: 100%;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #c0cdd3;
-}
-
-.parallax-nightsky {
-  /* The image used */
-  background-image: url("../res/nightsky.png");
-  /* Set a specific height */
-  height: 100%;
-  width: 100%;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #c0cdd3;
-}
-
-.parallax-dawn {
-  /* The image used */
-  background-image: url("../res/dawn.png");
-  /* Set a specific height */
-  height: 100%;
-  width: 100%;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #c0cdd3;
-}
-
-.wrapper-fill-screen {
-  min-height: 100%;
-}
-
 .sidebar-left {
   position: fixed;
   top: 0;
@@ -196,6 +180,17 @@ html, body {
   padding: 25px 5px;
   padding-top: 50px;
   overflow: auto;
+  /* The image used */
+  background-image: url("../res/nebula.png");
+  color: #c0cdd3;
+  /* Set a specific height */
+  height: 100%;
+  width: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   /* Style Checker */
 }
 @media (max-width: 1199.98px) {
@@ -203,7 +198,7 @@ html, body {
     left: 1px;
   }
 }
-@media (min-width: 1199.98px) {
+@media (max-width: 2565px) {
   .sidebar-left {
     left: 1px;
   }
@@ -216,7 +211,7 @@ html, body {
   overflow-y: hidden;
   overflow-x: hidden;
 }
-@media (min-width: 1199.98px) {
+@media (max-width: 2565px) {
   .sidebar-left .sidebar-body .sidebar-links {
     margin: 0 auto;
   }
@@ -255,66 +250,6 @@ html, body {
   background-color: #28282A;
   color: #E7E8EA;
   font-family: Oxygen;
-}
-
-.parallax-nebula {
-  /* The image used */
-  background-image: url("../res/nebula.png");
-  /* Set a specific height */
-  height: 100%;
-  width: 100%;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #c0cdd3;
-}
-
-.parallax-moon {
-  /* The image used */
-  background-image: url("../res/moon.png");
-  /* Set a specific height */
-  height: 100%;
-  width: 100%;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #c0cdd3;
-}
-
-.parallax-nightsky {
-  /* The image used */
-  background-image: url("../res/nightsky.png");
-  /* Set a specific height */
-  height: 100%;
-  width: 100%;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #c0cdd3;
-}
-
-.parallax-dawn {
-  /* The image used */
-  background-image: url("../res/dawn.png");
-  /* Set a specific height */
-  height: 100%;
-  width: 100%;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #c0cdd3;
-}
-
-.wrapper-fill-screen {
-  min-height: 100%;
 }
 
 /*# sourceMappingURL=compiled.css.map */

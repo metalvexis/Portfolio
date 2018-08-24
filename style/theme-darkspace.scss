@@ -10,6 +10,18 @@ $light-fog-1: #787e74;
 $light-fog-2: #c0cdd3;
 $light-fog-3: #fff2c5;
 
+@mixin parallax-effect {
+  /* Set a specific height */
+	height: 100%; 
+	width: 100%;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 html, body {
 	height: 100%;
 	margin: 0;
@@ -24,74 +36,60 @@ html, body {
 
 }
 
-.parallax-nebula { 
+@mixin parallax-nebula { 
 	/* The image used */
 	background-image: url("../res/nebula.png");
-
-	/* Set a specific height */
-	height: 100%; 
-	width: 100%;
-
-	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-
 	color: $light-fog-2;
+	@include parallax-effect;
 }
 
-.parallax-moon { 
+@mixin parallax-moon { 
 	/* The image used */
 	background-image: url("../res/moon.png");
-
-	/* Set a specific height */
-	height: 100%; 
-	width: 100%;
-
-	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-
 	color: $light-fog-2;
+	@include parallax-effect;
 }
 
-.parallax-nightsky { 
+@mixin parallax-nightsky { 
 	/* The image used */
 	background-image: url("../res/nightsky.png");
-
-	/* Set a specific height */
-	height: 100%; 
-	width: 100%;
-
-	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-
 	color: $light-fog-2;
+	@include parallax-effect;
 }
 
-.parallax-dawn { 
+@mixin parallax-dawn { 
 	/* The image used */
 	background-image: url("../res/dawn.png");
-
-	/* Set a specific height */
-	height: 100%; 
-	width: 100%;
-
-	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-
 	color: $light-fog-2;
+	@include parallax-effect;
 }
 
-.wrapper-fill-screen {
-	min-height: 100%;
+@mixin parallax-enabled {
+	div#first{
+		@include parallax-nebula;
+	}
+	div#second{
+		@include parallax-moon;
+	}
+	div#third{
+		@include parallax-nightsky;
+	}
+	div#last{
+		@include parallax-dawn;
+	}
+}
+
+@mixin parallax-disabled {
+	div#first{
+		@include parallax-nebula;
+	}
+	div#second{
+		@include parallax-nebula;
+	}
+	div#third{
+		@include parallax-nebula;
+	}
+	div#last{
+		@include parallax-nebula;
+	}
 }

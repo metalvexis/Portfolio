@@ -8,7 +8,8 @@
 	padding: 25px 5px;
 	padding-top: 50px;
 	overflow: auto;
-	
+	@include parallax-nebula;
+
 	@media #{$lg} {
 		//min-width: 200px;
 		left: 1px;
