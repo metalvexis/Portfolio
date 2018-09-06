@@ -11,16 +11,21 @@
 
 		.main-section{
 			background-color: $space-bg;
-			padding: 4% 2%;
+			padding: 1.5% 1.5%;
 			font-size: 18px;
 			text-shadow: 0px 0px 6px #000;
 
 			@media #{$xs} {
-				padding: 10% 4%;	
+				padding: 1.5% 1.5%;	
 			}
 			
-			h3 {
+			h1, h3 {
 				color: $space-contrast-3;
+			}
+
+			.content {
+				padding: 2% 2%;
+				border-radius: 20px;
 			}
 		}
 		
@@ -45,4 +50,38 @@
 	background-color: $light-fog-1;
 	min-height: 300px !important;
 	max-height: 300px !important;
+}
+
+.wrapper-overlay-dark {
+	height: 100%;
+	background-color: $dark-overlay;
+}
+
+.wrapper-overlay-light {
+	height: 100%;
+	background-color: $light-overlay;
+}
+
+.wrapper-my-face {
+	@media #{$xs} {
+		// height: 200px;
+		max-height: 200px;
+		img {
+			max-height: 200px;
+		}
+	}
+	@media #{$xl} {
+		// height: 300px;
+		max-height: 300px;
+		img {
+			max-height: 300px;
+		}
+	}
+	
+	.yaranaika {
+		opacity: 0;
+		&:hover{
+			opacity: 0.75;
+		}
+	}
 }

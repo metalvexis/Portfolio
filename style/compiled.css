@@ -26,22 +26,26 @@ html, body {
 }
 .main-content .main-body .main-section {
   background-color: #28282A;
-  padding: 4% 2%;
+  padding: 1.5% 1.5%;
   font-size: 18px;
   text-shadow: 0px 0px 6px #000;
 }
 @media (max-width: 575.98px) {
   .main-content .main-body .main-section {
-    padding: 10% 4%;
+    padding: 1.5% 1.5%;
   }
 }
-.main-content .main-body .main-section h3 {
+.main-content .main-body .main-section h1, .main-content .main-body .main-section h3 {
   color: #C44C27;
+}
+.main-content .main-body .main-section .content {
+  padding: 2% 2%;
+  border-radius: 20px;
 }
 @media (max-width: 2565px) {
   .main-content .main-body div#first {
     /* The image used */
-    background-image: url("../res/nebula.png");
+    background-image: url("https://imgur.com/VaFn5sB.png");
     color: #c0cdd3;
     /* Set a specific height */
     height: 100%;
@@ -54,7 +58,7 @@ html, body {
   }
   .main-content .main-body div#second {
     /* The image used */
-    background-image: url("../res/moon.png");
+    background-image: url("https://imgur.com/bXH1C6Z.png");
     color: #c0cdd3;
     /* Set a specific height */
     height: 100%;
@@ -67,7 +71,7 @@ html, body {
   }
   .main-content .main-body div#third {
     /* The image used */
-    background-image: url("../res/nightsky.png");
+    background-image: url("https://imgur.com/JgOvsTb.png");
     color: #c0cdd3;
     /* Set a specific height */
     height: 100%;
@@ -95,7 +99,7 @@ html, body {
 @media (max-width: 575.98px) {
   .main-content .main-body div#first {
     /* The image used */
-    background-image: url("../res/nebula.png");
+    background-image: url("https://imgur.com/VaFn5sB.png");
     color: #c0cdd3;
     /* Set a specific height */
     height: 100%;
@@ -108,7 +112,7 @@ html, body {
   }
   .main-content .main-body div#second {
     /* The image used */
-    background-image: url("../res/nebula.png");
+    background-image: url("https://imgur.com/VaFn5sB.png");
     color: #c0cdd3;
     /* Set a specific height */
     height: 100%;
@@ -121,7 +125,7 @@ html, body {
   }
   .main-content .main-body div#third {
     /* The image used */
-    background-image: url("../res/nebula.png");
+    background-image: url("https://imgur.com/VaFn5sB.png");
     color: #c0cdd3;
     /* Set a specific height */
     height: 100%;
@@ -134,7 +138,7 @@ html, body {
   }
   .main-content .main-body div#last {
     /* The image used */
-    background-image: url("../res/nebula.png");
+    background-image: url("https://imgur.com/VaFn5sB.png");
     color: #c0cdd3;
     /* Set a specific height */
     height: 100%;
@@ -159,6 +163,39 @@ html, body {
   max-height: 300px !important;
 }
 
+.wrapper-overlay-dark {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.wrapper-overlay-light {
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+@media (max-width: 575.98px) {
+  .wrapper-my-face {
+    max-height: 200px;
+  }
+  .wrapper-my-face img {
+    max-height: 200px;
+  }
+}
+@media (max-width: 2565px) {
+  .wrapper-my-face {
+    max-height: 300px;
+  }
+  .wrapper-my-face img {
+    max-height: 300px;
+  }
+}
+.wrapper-my-face .yaranaika {
+  opacity: 0;
+}
+.wrapper-my-face .yaranaika:hover {
+  opacity: 0.75;
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -181,7 +218,7 @@ html, body {
   padding-top: 50px;
   overflow: auto;
   /* The image used */
-  background-image: url("../res/nebula.png");
+  background-image: url("https://imgur.com/VaFn5sB.png");
   color: #c0cdd3;
   /* Set a specific height */
   height: 100%;

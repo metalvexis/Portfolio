@@ -9,6 +9,8 @@ $space-contrast-3: #C44C27;
 $light-fog-1: #787e74;
 $light-fog-2: #c0cdd3;
 $light-fog-3: #fff2c5;
+$dark-overlay: rgba(0, 0, 0, 0.15);
+$light-overlay: rgba(255, 255, 255, 0.15);
 
 @mixin parallax-effect {
   /* Set a specific height */
@@ -38,21 +40,24 @@ html, body {
 
 @mixin parallax-nebula { 
 	/* The image used */
-	background-image: url("../res/nebula.png");
+	// background-image: url("../res/nebula.png");
+	background-image: url("https://imgur.com/VaFn5sB.png");
 	color: $light-fog-2;
 	@include parallax-effect;
 }
 
 @mixin parallax-moon { 
 	/* The image used */
-	background-image: url("../res/moon.png");
+	// background-image: url("../res/moon.png");
+	background-image: url("https://imgur.com/bXH1C6Z.png");
 	color: $light-fog-2;
 	@include parallax-effect;
 }
 
 @mixin parallax-nightsky { 
 	/* The image used */
-	background-image: url("../res/nightsky.png");
+	// background-image: url("../res/nightsky.png");
+	background-image: url("https://imgur.com/JgOvsTb.png");
 	color: $light-fog-2;
 	@include parallax-effect;
 }
