@@ -7,22 +7,22 @@ body{
 }
 
 .portfolio{
-  margin-top: 40px;
+  margin-top: 120px;
   font-family: theme.$theme-text__font, sans-serif;
 }
 
 
 .header{
-  width: 100vw;
-  padding: 20px 0px;
-
-  .header__entry{
-    padding: 10px;
-    
+  // width: 100vw;
+  // padding: 20px 0px;
+  // position: fixed;
+  // margin: 25px 0px;
+  .header__entry{   
 
     .header__entry-text{
       border: 1px solid theme.$theme-color__3;
-      padding: 10px;
+      padding: 20px 0px;
+      margin-bottom: 20px;
       text-align: center;
       font-size: theme.$theme-text__size-2;
       color: theme.$theme-color__3;
@@ -39,7 +39,7 @@ body{
 .expo__image{
   // float: left;
   img{
-    // max-width: 600px;
+    max-height: 300px;
     border-radius: 5px;
   }
 }

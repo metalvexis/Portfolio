@@ -8998,20 +8998,14 @@ body {
 }
 
 .portfolio {
-  margin-top: 40px;
+  margin-top: 120px;
   font-family: "Titillium Web", sans-serif;
 }
 
-.header {
-  width: 100vw;
-  padding: 20px 0px;
-}
-.header .header__entry {
-  padding: 10px;
-}
 .header .header__entry .header__entry-text {
   border: 1px solid #b0c6d9;
-  padding: 10px;
+  padding: 20px 0px;
+  margin-bottom: 20px;
   text-align: center;
   font-size: 24px;
   color: #b0c6d9;
@@ -9022,6 +9016,7 @@ body {
 }
 
 .expo__image img {
+  max-height: 300px;
   border-radius: 5px;
 }
 
