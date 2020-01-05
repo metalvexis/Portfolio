@@ -8998,23 +8998,34 @@ body {
 }
 
 .portfolio {
+  margin-top: 40px;
   font-family: "Titillium Web", sans-serif;
+}
+
+.header {
+  width: 100vw;
+  padding: 20px 0px;
+}
+.header .header__entry {
+  padding: 10px;
+}
+.header .header__entry .header__entry-text {
+  border: 1px solid #b0c6d9;
+  padding: 10px;
+  text-align: center;
+  font-size: 24px;
+  color: #b0c6d9;
 }
 
 .expo {
   margin: 0px auto;
 }
 
-.expo__image {
-  float: left;
-}
 .expo__image img {
-  max-width: 600px;
   border-radius: 5px;
 }
 
 .expo__statement {
-  float: right;
   min-height: 100%;
   text-align: center;
   color: #011140;

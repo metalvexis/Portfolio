@@ -7,25 +7,45 @@ body{
 }
 
 .portfolio{
-  
+  margin-top: 40px;
   font-family: theme.$theme-text__font, sans-serif;
 }
 
+
+.header{
+  width: 100vw;
+  padding: 20px 0px;
+
+  .header__entry{
+    padding: 10px;
+    
+
+    .header__entry-text{
+      border: 1px solid theme.$theme-color__3;
+      padding: 10px;
+      text-align: center;
+      font-size: theme.$theme-text__size-2;
+      color: theme.$theme-color__3;
+
+    }
+
+  }
+}
 
 .expo { 
   margin: 0px auto;
 }
 
 .expo__image{
-  float: left;
+  // float: left;
   img{
-    max-width: 600px;
+    // max-width: 600px;
     border-radius: 5px;
   }
 }
 
 .expo__statement{
-  float: right;
+  // float: right;
   
   min-height: 100%;
   text-align: center;
