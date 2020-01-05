@@ -1,0 +1,52 @@
+@use './theme';
+@use "sass:color";
+html,
+body{
+  min-height:100vh;
+  background-color: theme.$theme-color__5;
+}
+
+.portfolio{
+  
+  font-family: theme.$theme-text__font, sans-serif;
+}
+
+
+.expo { 
+  margin: 0px auto;
+}
+
+.expo__image{
+  float: left;
+  img{
+    max-width: 600px;
+    border-radius: 5px;
+  }
+}
+
+.expo__statement{
+  float: right;
+  
+  min-height: 100%;
+  text-align: center;
+  color: theme.$theme-color__1;
+  font-size: theme.$theme-text__size-1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .expo__message{
+    padding: 10px;
+    margin-left: -120px;
+    background-color: color.scale(theme.$theme-color__3, $alpha: -30%);
+    width: 500px;
+  }
+}
+
+.expo__poweredby{
+  text-align: center;
+  color: theme.$theme-color__4;
+  font-size: theme.$theme-text__size-3;
+  padding: 30px 0px;
+}

@@ -1,0 +1,32 @@
+{
+  "name": "metalvexis",
+  "version": "1.0.0",
+  "description": "Portfolio page",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "sass --watch ./style/style.scss:./style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metalvexis/metalvexis.github.io.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "James Saballegue",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/metalvexis/metalvexis.github.io/issues"
+  },
+  "homepage": "https://github.com/metalvexis/metalvexis.github.io#readme",
+  "nodemonConfig": {
+    "delay": "1000"
+  },
+  "devDependencies": {
+    "sass": "^1.24.2"
+  }
+}
