@@ -16,45 +16,42 @@
 
 </head>
 <body>
-  <nav class="navbar fixed-top navbar-expand-md">
-    <ul class="header navbar-nav mr-auto col-md-6 offset-md-3">
-      <li class="header__entry nav-item col-md-4">
-        <div class="header__entry-text">
-          Ego
-        </div>
-      </li>
-      <li class="header__entry nav-item  col-md-4">
-        <div class="header__entry-text">
-          Experience
-        </div>
-      </li>
-      <li class="header__entry nav-item  col-md-4">
-        <div class="header__entry-text">
-          Expertise
-        </div>
-      </li>
-    </ul>
-  </nav>
   
-  <div class="container-fluid h-100">
-    <div class="row">
-      <div class="portfolio col-12">
-        <div class="row" id="ego">
+  <div class="container container__main">
+    <div class="row h-100">
+      <div class="col-sm-12 portfolio">
+        <div id="ego">
           <div class="expo">
-            <div class="expo__image float-left">
-              <img src="./res/images/profilepic.png" class="img-fluid" alt="Responsive image">
+            <div class="expo__image-frame">
+              <!-- <img class="expo__image-profile" src="./res/images/profilepic.png" alt="James Saballegue Face"> -->
+              <div class="expo__image-profile border__effect-softui"></div>
             </div>
-    
-            <div class="expo__statement float-right">
-              <div class="expo__message">
-                JAMES SABALLEGUE
-                <br>
-                [ i build web apps ]
+            <div class="expo__statement">
+              <div class="expo__message border__effect-softui">
+                <div class="expo__message-header">JAMES SABALLEGUE</div>
+                <div class="expo__message-body">i build web apps</div>
               </div>
             </div>
           </div>
+          <div class="expo__poweredby">
+            Powered by: coffee
+          </div>
+        </div>
 
-          <div class="expo__poweredby col-12">
+        <div id="experience">
+          <div class="expo-reverse">
+            <div class="expo__image-frame">
+              <!-- <img class="expo__image-profile" src="./res/images/profilepic.png" alt="James Saballegue Face"> -->
+              <div class="expo__image-project-1 border__effect-softui"></div>
+            </div>
+            <div class="expo__statement">
+              <div class="expo__message-project-1 border__effect-softui">
+                <div class="expo__message-header">Property Management System</div>
+                <div class="expo__message-body">The All in One Web App for Independent Hoteliers</div>
+              </div>
+            </div>
+          </div>
+          <div class="expo__poweredby">
             Powered by: coffee
           </div>
         </div>
@@ -67,3 +64,25 @@
 </body>
 
 </html>
+
+<!-- 
+<nav class="navbar fixed-top navbar-expand-md">
+  <ul class="header navbar-nav mr-auto col-md-6 offset-md-3">
+    <li class="header__entry nav-item col-md-4">
+      <div class="header__entry-text">
+        Ego
+      </div>
+    </li>
+    <li class="header__entry nav-item  col-md-4">
+      <div class="header__entry-text">
+        Experience
+      </div>
+    </li>
+    <li class="header__entry nav-item  col-md-4">
+      <div class="header__entry-text">
+        Expertise
+      </div>
+    </li>
+  </ul>
+</nav> 
+-->
