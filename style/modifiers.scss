@@ -1,0 +1,24 @@
+@use './theme';
+
+
+.border__effect-softui {
+  // Soft Edge
+  // background-color: #dfe7f2;
+  box-shadow: 0px 0px 20px #dfe7f2 inset, 5px 5px 10px #bdd0e0, -5px -5px 10px #ffffff;
+  border-radius: 10px;
+}
+
+.border__effect-softui2 {
+  box-shadow: 
+            -5px -5px 10px  #bdd0e0,
+            5px 5px 10px #ffffff;
+            
+  border-radius: 10px;
+}
+.text-serif {
+  font-family: theme.$theme-text__font-serif;
+}
+
+.text-sans {
+  font-family: theme.$theme-text__font-sans;
+}

@@ -9047,6 +9047,24 @@ a.text-dark:focus, a.text-dark:hover {
   }
 }
 /*# sourceMappingURL=bootstrap.min.css.map */
+.border__effect-softui {
+  box-shadow: 0px 0px 20px #dfe7f2 inset, 5px 5px 10px #bdd0e0, -5px -5px 10px #ffffff;
+  border-radius: 10px;
+}
+
+.border__effect-softui2 {
+  box-shadow: -5px -5px 10px #bdd0e0, 5px 5px 10px #ffffff;
+  border-radius: 10px;
+}
+
+.text-serif {
+  font-family: "Noto Serif", "serif";
+}
+
+.text-sans {
+  font-family: "Titillium Web", "sans-serif";
+}
+
 html,
 body,
 .container__main {
@@ -9057,7 +9075,6 @@ body,
 
 .portfolio {
   margin-top: 120px;
-  font-family: "Titillium Web", sans-serif;
 }
 
 .header .header__entry .header__entry-text {
@@ -9074,18 +9091,21 @@ body,
 }
 
 .expo {
-  min-height: 300px;
+  min-height: 250px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  align-items: stretch;
+  align-content: space-evenly;
 }
 .expo-reverse {
   min-height: 300px;
   display: flex;
   flex-flow: row-reverse wrap;
-  justify-content: space-evenly;
-  align-items: stretch;
+  justify-content: space-around;
+  align-content: space-around;
+}
+.expo img {
+  border-radius: 10px;
 }
 
 .expo__image-frame {
@@ -9097,30 +9117,30 @@ body,
   background-position: center;
   background-image: url("./res/images/profilepic.png");
   background-size: cover;
+  min-height: 300px;
   width: 100%;
   height: auto;
-  min-height: 300px;
   display: block;
 }
 .expo__image-frame .expo__image-project-1 {
   background-position: center;
   background-image: url("./res/images/project1.png");
   background-size: cover;
+  min-height: 300px;
   width: 100%;
   height: auto;
-  min-height: 300px;
   display: block;
 }
 
 .expo__statement {
-  text-align: center;
+  max-width: 500px;
   color: #011140;
 }
 @media (min-width: 992px) {
   .expo__statement {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
   }
 }
 .expo__statement .expo__message {
@@ -9129,48 +9149,61 @@ body,
 @media (max-width: 991px) {
   .expo__statement .expo__message {
     font-size: 1.25rem;
-    padding: 5px 35px;
+    padding: 10px;
   }
 }
 @media (min-width: 992px) {
   .expo__statement .expo__message {
     font-size: 1.85rem;
-    padding: 10px 75px;
-  }
-}
-.expo__statement .expo__message-project-1 {
-  max-width: 500px;
-  text-align: left;
-}
-@media (max-width: 991px) {
-  .expo__statement .expo__message-project-1 {
-    font-size: 1.25rem;
-    padding: 5px 35px;
-  }
-}
-@media (min-width: 992px) {
-  .expo__statement .expo__message-project-1 {
-    font-size: 1.85rem;
-    padding: 10px 75px;
+    padding: 20px;
   }
 }
 .expo__statement .expo__message-header {
+  margin-bottom: 10px;
+  font-family: "Noto Serif", "serif";
   font-size: 1.65rem;
 }
 .expo__statement .expo__message-body {
+  font-family: "Titillium Web", "sans-serif";
   font-size: 1.45rem;
+}
+.expo__statement .expo__message-logo {
+  float: left;
+  width: 200px;
+  height: 200px;
+}
+
+.expo__header {
+  margin: 40px 0px;
+}
+.expo__header .title-1 {
+  font-family: "Titillium Web", "sans-serif";
+  font-size: 1.85rem;
+  color: #7693a6;
+  padding: 0px 30px;
+  box-shadow: -5px -5px 10px #bdd0e0;
+  border-radius: 10px;
+}
+.expo__header .title-2 {
+  font-family: "Titillium Web", "sans-serif";
+  font-size: 1.65rem;
+  color: #7693a6;
+  padding: 0px 30px;
+  border-radius: 10px;
+}
+@media (min-width: 768px) {
+  .expo__header .title-2 {
+    margin: 0 30px;
+  }
 }
 
 .expo__poweredby {
   text-align: center;
-  color: #7693A6;
+  color: #7693a6;
+  font-family: "Titillium Web", "sans-serif";
   font-size: 1.25rem;
   padding: 30px 0px;
-}
-
-.border__effect-softui {
-  box-shadow: 0px 0px 20px #dfe7f2 inset, 5px 5px 10px #bdd0e0, -5px -5px 10px #ffffff;
-  border-radius: 10px;
+  margin-bottom: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

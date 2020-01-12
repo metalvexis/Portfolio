@@ -1,7 +1,11 @@
-@use './theme';
 @use 'sass:color';
+@use './theme';
 @use './mediaq';
-
+@mixin img-responsive {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 html,
 body,
 .container__main {
@@ -12,7 +16,6 @@ body,
 
 .portfolio {
   margin-top: 120px;
-  font-family: theme.$theme-text__font, sans-serif;
 }
 
 
@@ -33,24 +36,29 @@ body,
 
 
 #ego {
-  // min-height: 350px;
   margin-bottom: 100px;
 }
 
 .expo { 
-  min-height: 300px;
+  
+  min-height: 250px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  align-items: stretch;
+  align-content: space-evenly;
 
   &-reverse {
     
     min-height: 300px;
     display: flex;
     flex-flow: row-reverse wrap;
-    justify-content: space-evenly;
-    align-items: stretch;
+    justify-content: space-around;
+    align-content: space-around;
+    // align-items: center;
+  }
+
+  img {
+    border-radius: 10px;
   }
 }
 
@@ -64,30 +72,23 @@ body,
     background-position: center;
     background-image: url('./res/images/profilepic.png');
     background-size: cover;
-
-    width: 100%;
-    height: auto;
     min-height: 300px;
-    display: block;
+    @include img-responsive();
   }
 
   .expo__image-project-1{
     background-position: center;
     background-image: url('./res/images/project1.png');
     background-size: cover;
-
-    width: 100%;
-    height: auto;
     min-height: 300px;
-    display: block;
+    @include img-responsive();
   }
-  
+   
 }
 
-
-
 .expo__statement {
-  text-align: center;
+  max-width: 500px;
+  // min-width: 400px;
   color: theme.$theme-color__1;
   
   @include mediaq.respond-below(md) {
@@ -98,65 +99,75 @@ body,
     // position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     // margin: 0 auto;
     // height: 100%;
   }
 
   .expo__message {
     margin: 0 auto;
-    // background-color: color.scale(theme.$theme-color__3, $alpha: -30%);
 
     @include mediaq.respond-below(md) {
       font-size: theme.$theme-text__size-4res;
-      padding: 5px 35px;
+      padding: 10px;
     }
     @include mediaq.respond-above(md) {
       font-size: theme.$theme-text__size-1res;
-      padding: 10px 75px;
+      padding: 20px;
     }
-
-    &-project-1 {
-      max-width: 500px;
-      text-align: left;
-  
-      @include mediaq.respond-below(md) {
-        font-size: theme.$theme-text__size-4res;
-        padding: 5px 35px;
-      }
-      @include mediaq.respond-above(md) {
-        font-size: theme.$theme-text__size-1res;
-        padding: 10px 75px;
-      }
-  }
   }
   
   .expo__message-header {
+    margin-bottom: 10px;
+    font-family: theme.$theme-text__font-serif;
     font-size: theme.$theme-text__size-2res;
   }
 
   .expo__message-body {
+    font-family: theme.$theme-text__font-sans;
     font-size: theme.$theme-text__size-3res;
+  }
+
+  .expo__message-logo {
+    float: left;
+    width: 200px;
+    height: 200px;
   }
   
   
+}
+
+.expo__header {
+  margin: 40px 0px;
+  .title-1 {
+    font-family: theme.$theme-text__font-sans;
+    font-size: theme.$theme-text__size-1res;
+    color: theme.$theme-color__4;
+    padding: 0px 30px;
+    box-shadow: -5px -5px 10px  #bdd0e0;
+    border-radius: 10px;
+  }
+
+  .title-2 {
+    font-family: theme.$theme-text__font-sans;
+    font-size: theme.$theme-text__size-2res;
+    color: theme.$theme-color__4;
+    padding: 0px 30px;
+    // box-shadow: -5px -5px 10px  #ffffff;
+    border-radius: 10px;
+    @include mediaq.respond-above(sm) {
+      margin: 0 30px;
+    }
+    
+  }
 }
 
 .expo__poweredby {
   text-align: center;
   color: theme.$theme-color__4;
+  font-family: theme.$theme-text__font-sans;
   font-size: theme.$theme-text__size-4res;
   padding: 30px 0px;
+  margin-bottom: 50px;
 }
-
-// .border__effect-softui {
-//   border-radius: 10px;
-//   background-color: #DFE7F2;
-//   box-shadow: 0 0 20px 10px #F2F2F2 inset, -10px -10px 20px 0px #ffffff, 10px 10px 20px 0px #b0c6d9;
-// }
-.border__effect-softui {
-  // Soft Edge
-  // background-color: #dfe7f2;
-  box-shadow: 0px 0px 20px #dfe7f2 inset, 5px 5px 10px #bdd0e0, -5px -5px 10px #ffffff;
-  border-radius: 10px;
-}
+    
